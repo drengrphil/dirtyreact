@@ -1,0 +1,13 @@
+import React from 'react'
+// Function component without return statement.
+// Default props: title="No Title Provided" etc...
+export const Book = ({title="No Title Provided", author="No Author", pages=0, freeBookMark}) =>{
+    return (
+      <section>
+          <h2>{title}</h2>
+          <p>by: {author}</p>
+          <p>Pages: {pages} pages</p>
+          <p>Free Bookmark Today: {freeBookMark ? 'yes!' : 'no!'}</p>
+      </section>
+    )
+  }
